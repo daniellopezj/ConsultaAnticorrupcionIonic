@@ -1,0 +1,17 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>
+            <ion-select placeholder="Departamento" [(ngModel)]="coddep" (ionChange)="loadMunicipio()">
+                <ion-select-option *ngFor=" let departamento of listdep " [value]="departamento.codigo ">
+                    {{ departamento.nombre }}</ion-select-option>
+            </ion-select>
+        </ion-title>
+        <ion-title>
+            <ion-select placeholder="municipio">
+                <ion-select-option *ngFor="let municipio of listmunicipio " [value]="municipio.codigo_municipio ">
+                    {{ municipio.municipio }}</ion-select-option>
+            </ion-select>
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content></ion-content>
