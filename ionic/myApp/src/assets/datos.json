@@ -1,0 +1,94 @@
+[
+
+    {
+        "pregunta": "¿Aprueba usted reducir el salario de los congresistas de 40 a 25 Salarios Mínimos Legales Mensuales Vigentes-SMLMV, fijando un tope de 25 SMLMV como máxima remuneración mensual de los congresistas y altos funcionarios del Estado señalados en el artículo 197 de la Constitución Política?",
+        "titulo": "Reducir el salario de congresistas y altos funcionarios del Estado",
+        "codigo": "001",
+        "si": "11.424.523",
+        "no": "96.153",
+        "siUmbral": 99.16,
+        "noUmbral": 0.83,
+        "nulos": "25.171",
+        "noMarcado": "126.275",
+        "total": "11.672.122 ",
+        "valido": "11.520.676"
+    },
+    {
+        "pregunta": "¿Aprueba usted que las personas condenadas por corrupción y delitos contra la administración pública deban cumplir la totalidad de las penas en la cárcel, sin posibilidades de reclusión especial, y que el Estado unilateralmente pueda dar por terminados los contratos con ellas y con las personas jurídicas de las que hagan parte, sin que haya lugar a indemnización alguna para el contratista ni posibilidad de volver a contratar con el Estado?",
+        "titulo": "Cárcel a corruptos y prohibirles volver a contratar con el Estad",
+        "codigo": "002",
+        "si": "11.468.214",
+        "no": "52.834",
+        "siUmbral": 99.54,
+        "noUmbral": 0.45,
+        "nulos": "21.226",
+        "noMarcado": "130.892",
+        "total": "11.673.166 ",
+        "valido": "11.521.048"
+    },
+    {
+        "pregunta": "¿Aprueba usted establecer la obligación a todas las entidades públicas y territoriales de usar pliegos tipo, que reduzcan la manipulación de requisitos habilitantes y ponderables y la contratación a dedo con un número anormalmente bajo de proponentes, en todo tipo de contrato con recursos públicos?",
+        "titulo": "Contratación transparente obligatoria en todo el país",
+        "codigo": "003",
+        "si": "11.433.519",
+        "no": "70.436",
+        "siUmbral": 99.38,
+        "noUmbral": 0.61,
+        "nulos": "19.728",
+        "noMarcado": "146.214",
+        "total": "11.669.897 ",
+        "valido": "11.503.955"
+    },
+    {
+        "pregunta": "¿Aprueba usted establecer la obligación de realizar audiencias públicas para que la ciudadanía y los corporados decidan el desglose y priorización del presupuesto de inversión de la Nación, los departamentos y los municipios, así como en la rendición de cuentas sobre su contratación y ejecución?",
+        "titulo": "Presupuestos públicos con participación de la ciudadanía",
+        "codigo": "004",
+        "si": "11.401.117",
+        "no": "101.367",
+        "siUmbral": 99.11,
+        "noUmbral": 0.88,
+        "nulos": "19.186",
+        "noMarcado": "149.754",
+        "total": "11.671.424 ",
+        "valido": "11.502.484"
+    },
+    {
+        "pregunta": "¿Aprueba usted obligar a congresistas y demás corporados a rendir cuentas anualmente sobre su asistencia, iniciativas presentadas, votaciones, debates, gestión de intereses particulares o de lobbistas, proyectos, partidas e inversiones públicas que haya gestionado y cargos públicos para los cuales hayan presentado candidatos?",
+        "titulo": "Congresistas deben rendir cuentas de su asistencia, votación y gestión",
+        "codigo": "005",
+        "si": "11.466.025",
+        "no": "45.561",
+        "siUmbral": 99.60,
+        "noUmbral": 0.39,
+        "nulos": "18.706",
+        "noMarcado": "136.951",
+        "total": "11.667.243 ",
+        "valido": "11.511.586"
+    },
+    {
+        "pregunta": "¿Aprueba usted obligar a todos los electos mediante VOTOS popular a hacer público a escrutinio de la ciudadanía sus declaraciones de bienes, patrimonio, rentas, pago de impuestos y conflictos de interés, como requisito para posesionarse y ejercer el cargo; incorporando la facultad de iniciar de oficio investigaciones penales y aplicar la extinción de dominio al elegido y a su potencial red de testaferros como su cónyuge, compañero o compañera permanente, a sus parientes dentro del cuarto grado de consanguinidad, segundo de afinidad y primero civil, y a sus socios de derecho o de hecho?",
+        "titulo": "Hacer públicas las propiedades e ingresos injustificados de políticos elegidos y extinguirles el dominio",
+        "codigo": "006",
+        "si": "11.431.282",
+        "no": "65.105",
+        "siUmbral": 99.43,
+        "noUmbral": 0.56,
+        "nulos": "18.776",
+        "noMarcado": "152.266",
+        "total": "11.667.429 ",
+        "valido": "11.496.387"
+    },
+    {
+        "pregunta": "¿Aprueba usted establecer un límite de máximo tres periodos para ser elegido y ejercer en una misma corporación de elección popular como el Senado de la República, la Cámara de Representantes, las Asambleas Departamentales, los Concejos Municipales y las Juntas Administradoras Locales?",
+        "titulo": "No más atornillados en el poder: máximo 3 períodos en corporaciones públicas",
+        "codigo": "007",
+        "si": "11.284.435",
+        "no": "110.568",
+        "siUmbral": 99.02,
+        "noUmbral": 0.97,
+        "nulos": "18.429",
+        "noMarcado": "246.879",
+        "total": "11.660.311 ",
+        "valido": "11.395.003"
+    }
+]

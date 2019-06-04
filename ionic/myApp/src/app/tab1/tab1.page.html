@@ -1,41 +1,77 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Tab One
-    </ion-title>
-  </ion-toolbar>
+    <ion-toolbar>
+        <ion-title>
+            <ion-row>
+                <ion-col size="3"></ion-col>
+                <ion-col size="6">
+                    <img src="../../assets/logo.png" />
+                </ion-col>
+                <ion-col size="3"></ion-col>
+            </ion-row>
+            <h4 class="text-center"> <strong> Consulta anticorrupcion </strong></h4>
+        </ion-title>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content>
     <ion-card class="welcome-card">
-      <ion-img src="/assets/shapes.svg"></ion-img>
-      <ion-card-header>
-        <ion-card-subtitle>Get Started</ion-card-subtitle>
-        <ion-card-title>Welcome to Ionic</ion-card-title>
-      </ion-card-header>
-      <ion-card-content>
-        <p>Now that your app has been created, you'll want to start building out features and components. Check out some of the resources below for next steps.</p>
-      </ion-card-content>
+        <img src="../../assets/Logo-final-01.png" alt="">
+        <ion-card-header>
+            <ion-card-title>¿En que consiste?</ion-card-title>
+            <ion-card-subtitle>¿Y en que va?</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content class="ion-text-justify">
+            <p>Después de la importante votación que tuvo la Consulta Anticorrupción el año pasado con 11.674.951 votos en todo el país, se llevó a cabo una Mesa Anticorrupción donde el Presidente, Ministerios y voceros de los diferentes partidos políticos
+                acordaron sacar adelante los 7 mandatos apoyados por los colombianos en las urnas. A pesar de que el acuerdo se hizo en el mes de agosto y los proyectos se presentaron en septiembre, el 2018 cerró sin grandes avances.</p>
+        </ion-card-content>
     </ion-card>
-    <ion-list lines="none">
-      <ion-list-header>
-        <ion-label>Resources</ion-label>
-      </ion-list-header>
-      <ion-item href="https://ionicframework.com/docs/">
-        <ion-icon slot="start" color="medium" name="book"></ion-icon>
-        <ion-label>Ionic Documentation</ion-label>
-      </ion-item>
-      <ion-item href="https://ionicframework.com/docs/building/scaffolding">
-        <ion-icon slot="start" color="medium" name="build"></ion-icon>
-        <ion-label>Scaffold Out Your App</ion-label>
-      </ion-item>
-      <ion-item href="https://ionicframework.com/docs/layout/structure">
-        <ion-icon slot="start" color="medium" name="grid"></ion-icon>
-        <ion-label>Change Your App Layout</ion-label>
-      </ion-item>
-      <ion-item href="https://ionicframework.com/docs/theming/basics">
-        <ion-icon slot="start" color="medium" name="color-fill"></ion-icon>
-        <ion-label>Theme Your App</ion-label>
-      </ion-item>
-    </ion-list>
+    <br>
+    <ion-list-header>
+        <ion-card-title>Resultados</ion-card-title>
+    </ion-list-header>
+    <ion-card class="welcome-card" *ngFor="let item of generaly">
+        <ion-card-header>
+            <ion-card-title> <strong> Pregunta: {{item.codigo}}</strong></ion-card-title>
+        </ion-card-header>
+        <ion-card-content class="ion-text-justify">
+            <p>{{item.titulo}}</p>
+            <ion-row>
+                <ion-text color="success">
+                    <h2>Si: </h2>
+                </ion-text>
+                <h2><b>{{item.si}}</b> </h2>
+            </ion-row>
+            <ion-row>
+                <ion-text color="danger">
+                    <h2>No: </h2>
+                </ion-text>
+                <h2><b>{{item.no}} </b></h2>
+            </ion-row>
+            <ion-row>
+                <ion-text color="secondary">
+                    <h2>validos: </h2>
+                </ion-text>
+                <h2><b>{{item.valido}} </b></h2>
+            </ion-row>
+            <ion-row>
+                <ion-text color="secondary">
+                    <h2>Nulos: </h2>
+                </ion-text>
+                <h2><b>{{item.nulos}} </b></h2>
+            </ion-row>
+            <ion-row>
+                <ion-text color="secondary">
+                    <h2>No marcados: </h2>
+                </ion-text>
+                <h2><b>{{item.noMarcado}} </b></h2>
+            </ion-row>
+            <br>
+            <ion-row>
+                <ion-text color="success">
+                    <h1>Total: </h1>
+                </ion-text>
+                <h1><b>{{item.total}}</b> </h1>
+            </ion-row>
+        </ion-card-content>
+    </ion-card>
 </ion-content>

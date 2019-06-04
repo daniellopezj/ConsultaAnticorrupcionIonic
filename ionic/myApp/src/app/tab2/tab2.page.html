@@ -1,17 +1,60 @@
 <ion-header>
     <ion-toolbar>
         <ion-title>
-            <ion-select placeholder="Departamento" [(ngModel)]="coddep" (ionChange)="loadMunicipio()">
-                <ion-select-option *ngFor=" let departamento of listdep " [value]="departamento.codigo ">
-                    {{ departamento.nombre }}</ion-select-option>
-            </ion-select>
-        </ion-title>
-        <ion-title>
-            <ion-select placeholder="municipio">
-                <ion-select-option *ngFor="let municipio of listmunicipio " [value]="municipio.codigo_municipio ">
-                    {{ municipio.municipio }}</ion-select-option>
-            </ion-select>
+            <ion-row>
+                <ion-col size="3"></ion-col>
+                <ion-col size="6">
+                    <img src="../../assets/logo.png" />
+                </ion-col>
+                <ion-col size="3"></ion-col>
+            </ion-row>
+            <h4 class="text-center"> <strong> Consulta anticorrupcion </strong></h4>
         </ion-title>
     </ion-toolbar>
 </ion-header>
-<ion-content></ion-content>
+<br>
+<ion-content [hidden]=show>
+    <ion-list-header>
+        <ion-card-title>Consulta por Municipios</ion-card-title>
+    </ion-list-header>
+    <ion-title>
+        <ion-select placeholder="Departamento" [(ngModel)]="coddep" (ionChange)="loadMunicipio()">
+            <ion-select-option *ngFor=" let departamento of listdep " [value]="departamento.codigo ">
+                {{ departamento.nombre }}</ion-select-option>
+        </ion-select>
+    </ion-title>
+    <ion-title>
+        <ion-select placeholder="municipio" [(ngModel)]="municipio" (ionChange)="loadQuestions()">
+            <ion-select-option *ngFor="let municipio of listmunicipio " [value]="municipio.codigo_municipio ">
+                {{ municipio.municipio }}</ion-select-option>
+        </ion-select>
+    </ion-title>
+    <h3 class="text-center">Preguntas</h3>
+    <div class="text-center">
+        <ion-grid>
+            <ion-row>
+                <ion-col size="1"></ion-col>
+                <ion-col size="11">
+                    <ion-button color="success" (click)="loadquestioninterface(001)">1</ion-button>
+                    <ion-button color="success" (click)="loadquestioninterface(002)">2</ion-button>
+                    <ion-button color="success" (click)="loadquestioninterface(003)">3</ion-button>
+                    <ion-button color="success" (click)="loadquestioninterface(004)">4</ion-button>
+                    <ion-button color="success" (click)="loadquestioninterface(005)">5</ion-button>
+                    <ion-button color="success" (click)="loadquestioninterface(006)">6</ion-button>
+                    <ion-button color="success" (click)="loadquestioninterface(007)">7</ion-button>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </div>
+    <br>
+    <div class="container text-justify" *ngIf="dataQuestion.vva != null">
+        {{showpregunta}}
+        <br>
+        <h3 *ngFor="let valor of sino ">
+            <strong> {{ valor.dga }}:</strong> {{valor.vga}}</h3>
+        <h3><strong> votos validos:</strong> {{dataQuestion.vva}}</h3>
+        <h3><strong> votos nulos:</strong> {{ dataQuestion.vnu}}</h3>
+        <h3><strong> votos no marcados:</strong> {{ dataQuestion.tnm}}</h3>
+        <h3><strong> votos totales:</strong> {{ dataQuestion.tot}}</h3>
+    </div>
+</ion-content>
